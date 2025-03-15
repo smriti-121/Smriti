@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bucket List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>BUCKET LIST</h1>
+        </div>
+    </header>
+    
+    <div class="logo-section">
+        <div class="logo">
+            <i class="fa-solid fa-list-check"></i>
+        </div>
+        <h2>Bucket List</h2>
+    </div>
+
+    <main class="container">
+        <div class="sidebar">
+            <div class="section-title">
+                <h3>CATEGORIES</h3>
+            </div>
+            <ul class="category-list">
+                <li><i class="fa-solid fa-bucket"></i> Buckets</li>
+                <li><i class="fa-solid fa-plane"></i> Travel & Adventure</li>
+                <li><i class="fa-solid fa-user-plus"></i> Personal Development</li>
+                <li><i class="fa-solid fa-briefcase"></i> Career & Achievement</li>
+                <li><i class="fa-solid fa-heart-pulse"></i> Health & Fitness</li>
+                <li><i class="fa-solid fa-palette"></i> Creative Expression</li>
+                <li><i class="fa-solid fa-people-group"></i> Relationships & Family</li>
+                <li><i class="fa-solid fa-money-bill-trend-up"></i> Financial Goals</li>
+                <li><i class="fa-solid fa-camera"></i> Lifestyle & Experience</li>
+                <li><i class="fa-solid fa-book"></i> Legacy & Personal History</li>
+            </ul>
+
+            <div class="section-title database-section">
+                <h3>DATABASE</h3>
+            </div>
+        </div>
+
+        <div class="content">
+            <h3 class="content-title">CURRENT LISTS</h3>
+            
+            <div class="timeline">
+                <div class="year" data-year="2025">2025</div>
+                <div class="year" data-year="2026">2026</div>
+                <div class="year" data-year="2027">2027</div>
+                <div class="year" data-year="2028">2028</div>
+                <div class="year" data-year="2029">2029</div>
+            </div>
+
+            <div class="year-content" id="year-2025">
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/736x/b3/e2/c3/b3e2c31496f8ff23f690a465fae3591c.jpg" alt="Multi-generational family reunion">
+                        </div>
+                        <div class="card-content">
+                            <h4>Master Programming Skills</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-low">Low</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card1-done">
+                                <label for="card1-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/736x/96/8a/9a/968a9a8a0d375a64e035a4edc81734ac.jpg" alt="New family tradition">
+                        </div>
+                        <div class="card-content">
+                            <h4>Develop Study Discipline</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-high">High</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card2-done">
+                                <label for="card2-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/736x/d8/82/0d/d8820deb0f8d88b37ba21ac0f08e2e40.jpg" alt="Investment portfolio">
+                        </div>
+                        <div class="card-content">
+                            <h4>Embrace Healthy Lifestyle</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-medium">Medium</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card3-done">
+                                <label for="card3-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/736x/a6/bd/e5/a6bde5d9570e6698caadc9aeaee6925b.jpg" alt="Financial independence">
+                        </div>
+                        <div class="card-content">
+                            <h4>Achieve Academic Excellence</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-low">Low</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card4-done">
+                                <label for="card4-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/474x/ea/98/2b/ea982bce7970dce887beced76b538167.jpg" alt="Passive income">
+                        </div>
+                        <div class="card-content">
+                            <h4>Secure Professional Internship</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-medium">Medium</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card5-done">
+                                <label for="card5-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/474x/ba/9a/3f/ba9a3f3222e8e4038dc55bcccbc49991.jpg" alt="Foreign country">
+                        </div>
+                        <div class="card-content">
+                            <h4>Build Substantial Savings</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-high">High</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card6-done">
+                                <label for="card6-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="year-content" id="year-2026">
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/474x/c5/e6/f9/c5e6f901fedbe727055d795d28089a00.jpg" alt="Learn new language">
+                        </div>
+                        <div class="card-content">
+                            <h4>Enhance Productivity Routine</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-medium">Medium</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card7-done">
+                                <label for="card7-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/474x/1f/89/1d/1f891d8a99a0814ea6deab2aa2450cc9.jpg" alt="Marathon">
+                        </div>
+                        <div class="card-content">
+                            <h4>Increase Financial Security</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-high">High</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card8-done">
+                                <label for="card8-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/474x/46/8d/bd/468dbdec7fccb8d4f922799910f743df.jpg" alt="Start online business">
+                        </div>
+                        <div class="card-content">
+                            <h4>Create Outdoor Relaxation Space</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-medium">Medium</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card9-done">
+                                <label for="card9-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/474x/5b/b2/f8/5bb2f8bdb4bb2c8853d2fbb98a26eaa3.jpg" alt="Write a book">
+                        </div>
+                        <div class="card-content">
+                            <h4>Experience Wilderness Adventure</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-high">High</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card10-done">
+                                <label for="card10-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/474x/f9/72/01/f9720109f097695904ca73aa1d7abe56.jpg" alt="Travel Asia">
+                        </div>
+                        <div class="card-content">
+                            <h4>Commit to Fitness Regimen</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-medium">Medium</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card11-done">
+                                <label for="card11-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/474x/2c/dd/4a/2cdd4a4e02b081efec52d0dd71e8d7dd.jpg" alt="Learn to cook">
+                        </div>
+                        <div class="card-content">
+                            <h4>Develop Morning Discipline</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-low">Low</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card12-done">
+                                <label for="card12-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="year-content" id="year-2027">
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/474x/47/00/bf/4700bfc0b11baefb2093ce26f5a05efe.jpg" alt="Northern lights">
+                        </div>
+                        <div class="card-content">
+                            <h4>Complete Higher Education</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-high">High</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card13-done">
+                                <label for="card13-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/474x/04/99/a7/0499a7db5ba70c9e46cbbb3f5d0b89d4.jpg" alt="Volunteer">
+                        </div>
+                        <div class="card-content">
+                            <h4>Advance Coding Expertise</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-medium">Medium</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card14-done">
+                                <label for="card14-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/474x/2b/d4/3f/2bd43f44d2939f3bec58f21f695d5bac.jpg" alt="Instrument">
+                        </div>
+                        <div class="card-content">
+                            <h4>Pursue Musical Creativity</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-low">Low</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card15-done">
+                                <label for="card15-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.pinimg.com/474x/ba/9a/3f/ba9a3f3222e8e4038dc55bcccbc49991.jpg" alt="House">
+                        </div>
+                        <div class="card-content">
+                            <h4>Invest in Real Estate</h4>
+                            <div class="card-tags">
+                                <span class="tag tag-high">High</span>
+                            </div>
+                            <div class="card-status">
+                                <input type="checkbox" id="card16-done">
+                                <label for="card16-done">Done</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/474x/a0/74/67/a07467a9c9a8b934079fffd5169162cb.jpg" alt="Mountain climbing">
+                    </div>
+                    <div class="card-content">
+                        <h4>Budget for Travel Adventures</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-high">High</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card17-done">
+                            <label for="card17-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/474x/3c/c9/2f/3cc92f9fbb2e04808ebdae4a5fe58ebd.jpg" alt="Tech startup">
+                    </div>
+                    <div class="card-content">
+                        <h4>Learn Technical Design</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-medium">Medium</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card18-done">
+                            <label for="card18-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="year-content" id="year-2028">
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/474x/79/e7/33/79e73332a01c082e167f1320437c92f4.jpg" alt="Safari">
+                    </div>
+                    <div class="card-content">
+                        <h4>Establish Strategic Savings Plan</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-high">High</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card19-done">
+                            <label for="card19-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/474x/8e/51/10/8e5110550490287ebb54d0e12a4718e0.jpg" alt="Scuba diving">
+                    </div>
+                    <div class="card-content">
+                        <h4>Pursue Technical Certification</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-medium">Medium</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card20-done">
+                            <label for="card20-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/474x/3b/58/5d/3b585d6d365e5d629f0b0513364e8afd.jpg" alt="Learn to dance">
+                    </div>
+                    <div class="card-content">
+                        <h4>Develop Advanced Coding Projects</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-low">Low</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card21-done">
+                            <label for="card21-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/474x/ba/7c/6c/ba7c6c0c7d51506bb1fa19ecb1b53f7e.jpg" alt="Road trip">
+                    </div>
+                    <div class="card-content">
+                        <h4>Embark on Cross-Country Journey</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-medium">Medium</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card22-done">
+                            <label for="card22-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/474x/f5/8e/32/f58e32b78a3db1f517d5cb0eef087794.jpg" alt="Photography exhibition">
+                    </div>
+                    <div class="card-content">
+                        <h4>Create Professional Photography Portfolio</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-high">High</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card23-done">
+                            <label for="card23-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://i.pinimg.com/474x/e9/2e/c9/e92ec9975ebc6c93d59de000e0a266bf.jpg" alt="Pilot license">
+                    </div>
+                    <div class="card-content">
+                        <h4>Invest in Luxury Vehicle</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-high">High</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card24-done">
+                            <label for="card24-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="year-content" id="year-2029">
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/api/placeholder/400/320" alt="placeholder">
+                    </div>
+                    <div class="card-content">
+                        <h4>Start a charitable foundation</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-high">High</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card25-done">
+                            <label for="card25-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/api/placeholder/400/320" alt="placeholder">
+                    </div>
+                    <div class="card-content">
+                        <h4>Invest in sustainable energy</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-medium">Medium</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card26-done">
+                            <label for="card26-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/api/placeholder/400/320" alt="placeholder">
+                    </div>
+                    <div class="card-content">
+                        <h4>Complete a triathlon</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-high">High</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card27-done">
+                            <label for="card27-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/api/placeholder/400/320" alt="placeholder">
+                    </div>
+                    <div class="card-content">
+                        <h4>Mentor aspiring entrepreneurs</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-low">Low</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card28-done">
+                            <label for="card28-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/api/placeholder/400/320" alt="placeholder">
+                    </div>
+                    <div class="card-content">
+                        <h4>Learn a traditional craft</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-medium">Medium</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card29-done">
+                            <label for="card29-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/api/placeholder/400/320" alt="placeholder">
+                    </div>
+                    <div class="card-content">
+                        <h4>Create a family legacy project</h4>
+                        <div class="card-tags">
+                            <span class="tag tag-high">High</span>
+                        </div>
+                        <div class="card-status">
+                            <input type="checkbox" id="card30-done">
+                            <label for="card30-done">Done</label>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div> -->
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Personal Bucket List | Designed by SMRITI<i class="fa-solid fa-heart"></i></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
